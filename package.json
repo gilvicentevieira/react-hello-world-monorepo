@@ -1,0 +1,12 @@
+{
+  "name": "react-hello-world-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gilvicentevieira/react-hello-world-monorepo.git",
+  "author": "Gil <gilvicentevieira@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "apps/*"
+  ]
+}
