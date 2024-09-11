@@ -53,10 +53,9 @@ const FetchPerSearch = () => {
           const mappedHeroes = data.results.map((item: any) => ({ id: item.id, name: item.name }))
           setHeroes(mappedHeroes)
         }
-
-        setLoading(false)
       } catch (err) {
         console.log(err)
+      } finally {
         setLoading(false)
       }
     }, 300)
