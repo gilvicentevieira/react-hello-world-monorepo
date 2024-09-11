@@ -1,18 +1,14 @@
-import { ReactNode } from "react"
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 
-interface Props {
-  children: ReactNode;
-}
-
-const MainLayout = ({ children }: Props) => {
+const MainLayout = () => {
   return (
-    <html>
-      <body>
-        <Header/>
-        {children}
-      </body>
-    </html>
+    <>
+      <Header/>
+      <main>
+        <Outlet/>
+      </main>
+    </>
   )
 }
 
