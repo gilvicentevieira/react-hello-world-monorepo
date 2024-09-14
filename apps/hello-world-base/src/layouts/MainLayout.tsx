@@ -7,12 +7,10 @@ interface Props {
 
 const MainLayout = ({ children }: Props) => {
   return (
-    <html>
-      <body>
-        <Header/>
-        {children}
-      </body>
-    </html>
+    <>
+      <Header />
+      {children}
+    </>
   )
 }
 
