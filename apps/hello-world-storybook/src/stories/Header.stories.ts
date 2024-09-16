@@ -8,10 +8,9 @@ const meta: Meta<typeof Header> = {
 export default meta;
 type Story = StoryObj<typeof Header>;
 
-export const Primary: Story = {
+export const HeaderPrimary: Story = {
   args: {
     primary: true,
-    label: 'Header',
-    size: 'md'
+    label: 'Header'
   },
 };
